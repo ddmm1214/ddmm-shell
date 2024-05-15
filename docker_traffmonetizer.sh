@@ -19,3 +19,4 @@ exit
 
 docker start tm
 echo "脚本执行完成!"
+docker ps
