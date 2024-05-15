@@ -3,12 +3,11 @@
 # Docker 一键安装
 echo "正在安装 Docker..."
 curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
+wait
+
 systemctl enable docker
 systemctl start docker
 
-# 运行 hello-world 镜像测试
-echo "运行 hello-world 镜像测试..."
-docker run --rm hello-world
 
 # 安装并运行 traffmonetizer
 echo "安装并运行 traffmonetizer..."
