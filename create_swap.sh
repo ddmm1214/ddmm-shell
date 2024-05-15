@@ -36,4 +36,8 @@ sudo swapon --show
 echo "使Swap持久化..."
 echo "$SWAP_FILE none swap sw 0 0" | sudo tee -a /etc/fstab
 
+# 打印当前的内存和swap使用情况
+echo "当前内存和Swap使用情况:"
+free -h
+
 echo "Swap配置完成。"
