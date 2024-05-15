@@ -14,5 +14,8 @@ docker run --rm hello-world
 echo "安装并运行 traffmonetizer..."
 docker pull traffmonetizer/cli_v2:latest
 docker run -i --name tm traffmonetizer/cli_v2 start accept --token UoU9iKrcyNkwzW2w/1DwKuMGOHqI0AXggj4fV3TsvY4=
+sleep 30
+exit
 
+docker start tm
 echo "脚本执行完成!"
